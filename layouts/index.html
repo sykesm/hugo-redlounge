@@ -19,7 +19,7 @@
                     </div>
                     {{ end }}
                     <h1 class="post-title">
-                      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                      <a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft  }} (DRAFT){{ end }}</a>
                   </h1>
               </header>
               <p class="post-meta">
